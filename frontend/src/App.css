@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+.main .left,
+.main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.5em;
+}
+.left {
+  background-color: black;
+  position: relative;
+}
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.7em;
+}
+.left .code pre {
+  margin: 0;
+  background-color: #0c0c0c;
+}
+.review {
+  position: absolute;
+  bottom: 1rem;
+  padding: 0.5em 2rem;
+  cursor: pointer;
+  right: 1rem;
+  border-radius: 0.7em;
+  user-select: none;
+  background-color: #9e9595;
+}
+.right {
+  background-color: #343434;
+  padding: 1rem;
+  overflow: auto;
+}
